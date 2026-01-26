@@ -7,3 +7,10 @@
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
+
+nav a {
+  text-decoration: none; /* Removes underline */
+  padding: 5 15px; /* Adds horizontal spacing */
+  color: black;
+  font-size: 1.7em;
+}
