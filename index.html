@@ -74,10 +74,34 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    <script src="script.js"></script>
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
   <p>We offer the Stultus Avis, the premier source of information on the peasants. Learn their desires, and how to exploit them just right so they dont think of rebellion in your domain!</p>
   <hr>
   <p><a href="saa001.txt">Issue 1</a> - The first issue of the Stultus Avis</p>
