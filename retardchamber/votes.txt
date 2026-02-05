@@ -1,0 +1,11 @@
+VOTES OF THE RETARD CHAMBER
+=======================================
+#1: Name Vote
+Votes: 8
+Missing: 1
+Invalid: 1
+
+Choices:
+- Retard Chamber (WON)
+- Moron Assn.
+- Idiots Club 
