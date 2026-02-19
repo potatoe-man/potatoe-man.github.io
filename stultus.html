@@ -2,9 +2,65 @@
 <html>
   <head>
     <title>The Stultus Avis</title>
-    <link rel=stylesheet href="styles.css">
+    <style>
+	* {
+	font-family: "Helvetica", Tahoma, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.flex-container {
+            display: flex;
+            gap: 20px; /* Space between articles */
+			flex-wrap: wrap;
+        }
+        .article {
+            flex: 1 0 30%; /* Each article takes at least 30% width */
+            max-width: calc(33.33% - 20px); /* Ensures only 3 fit in a row and accounts for gaps */
+            border: 1px solid #ccc; /* Optional border */
+            padding: 15px; /* Add some space inside */
+			box-sizing: border-box;
+			
+        }
+		
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+	</style>
   </head>
   <body>
+	<ul>
+	<nav>
+      <li><a href="#walmartwar">Walmart-Target War</a></li>
+      <li><a href="#world">World</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#technology">Technology</a></li>
+     </nav>
+	 </ul>
     <h1>The future home of the Stultus Avis</h1>
     <img src=dave.jpg width="500" height="300" alt="Obese drooling royal rides a unicorn, named Dave">
     <h2>But since its not done, you've stumbled upon Dave!</h2>
@@ -12,16 +68,17 @@
     <h1>Stultus Avis</h1>
     <header class="header">
       <h1>Daily News</h1>
-      <nav>
-      <a href="#walmartwar">Walmart-Target War</a>
-      <a href="#world">World</a>
-      <a href="#sports">Sports</a>
-      <a href="#technology">Technology</a>
-      </nav>
+      
     </header>
     <h2 id="walmartwar">Walmart-Target War</h2>
-    <h3>Something something 700 dead</h3>
-    <hr>
+	<div class="flex-container">
+		<div class="article">
+		<h3>Target strikes Walmart truck convoy</h3>
+		<p>19-2-26: A Target Drone struck a Walmartian truck convoy carrying soldiers and ammunition. 19 people are reported to have died, with 37 injured and 55 missing under debris.</p>
+		<p>The convoy was passing through a mountainous area somewhere in the Appalachian mountain range when the kamikaze drone struck, detonating ammunition and burying dozens under layers of rock</p>
+		<p>Anonymous sources told us that the Walmartians buried the survivors to cover up the incident.</p>
+		</div>
+    </div>
     <h2 id="#world">World News</h2>
     <h3>Something something obscure country has a disaster</h3>
     <hr>
