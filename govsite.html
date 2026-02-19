@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Average Government Website</title>
+<style>
+* {
+	font-family: "Times New Roman", serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+.flex-container {
+            display: flex;
+            gap: 20px; /* Space between articles */
+			flex-wrap: wrap;
+        }
+        .article {
+            flex: 1 0 30%; /* Each article takes at least 30% width */
+            max-width: calc(33.33% - 20px); /* Ensures only 3 fit in a row and accounts for gaps */
+            border: 1px solid #ccc; /* Optional border */
+            padding: 15px; /* Add some space inside */
+			box-sizing: border-box;
+			
+        }
+		
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* margin-top: -22px;  CMNT:Kept as is, for vertical centering */
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0; /* Added */
+  border-radius: 3px 0 0 3px; /* Fixed radius positioning */
+}
+
+.next {
+  right: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="govsite.html">Home</a></li>
+  <li><a href="tenders.html">Tenders</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="admin.html">Not an insecure Admin Login</a></li>
+  <li><a href="circulars.html">Circulars</a></li>
+</ul>
+<h1>Department of Not Existing</h1>
+<marquee>TENDERS OPEN FOR CONSTRUCTION OF NEW NOTHING TOWERS. Open until 35 October 2079. Apply by emailing getcheapslaves@slaves.work | We are Now HIRING! Submit resumes to our email address! | Please make sure to not question anything you see on this website, as doing so is strictly prohibited. By continuing to use this site, you agree to surrender your first born son to our Child Stomper machine for use in glue making. | New eTenders available! Waste your money NOW! | New Nothing Licences available via eFiling, go to your nearest empty field and pray until the licence falls down from the sky. | <a href="finreport25.docx">NEW! Financial Report for 2025</a> | New Tender! New Tender! <a href="tender1.docx">Click here! Come unarmed, and alone to the back of the Vishal mart. Do not tell anyone that you're coming. Dont bring yur phone.</a></marquee>
+
+<div class="flex-container">
+	<div class="article">
+	<h1>The Director</h1>
+	<p>John Doe. Experience in not existing, PhD in Disappearance at Potato International University.</p>
+	</div>
+	<div class="article">
+	<h1>Origins and History of the Department</h1>
+	<p>In 1979, the Department of Not Existing was formed to combat the rise of things that actually exist. Its first Director was L. Ipsum. Over the years, it has expanded to 0 employees and 5 slaves who do nothing all day that we haven't fed in a while.</p>
+	
+	</div>
+	<div class="article">
+	<h1>What's New for the Website:</h1>
+	<ol>
+	<li>This Whole Site</li>
+	<li>Tender section</li>
+	<li><a href="tender1.docx">Notice inviting bids for construction of human centrifuge and obliterator. If applying, come alone at night to the back of the Vishal at midnight sharp. Bring a black (opaque) polythene bag you can fit into.</a></li>
+	</ol>
+	</div>
+	<div class="article">
+	<h1>Reports and Financial Misdeeds</h1>
+	<p>Financial Report 2025: <a href="finreport25.docx">CLICK HERE</a></p>
+	</div>
+	
+	<div class="article">
+	<h1>eTender System for Proper Wastage</h1>
+	<p>Requesting Tender for new thing:</p>
+	<p>Construction of the Nothing Headquarters for our employees (0)</p>
+	<p>Slave sacrifice: pyres needed. Quality pine wood is most desirable.</p>
+	</div>
+	<div class="article">
+	<h1>Potato</h1>
+	<p>Potatoes are God. God is a potato. Worship His Presence. There will be nothing against the holy potato.</p>
+	</div>
+	<div class="article">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			
+			<img src="p1.jpg" style="width:600px; height:300px;">
+		</div>
+
+		<div class="mySlides fade">
+			
+			<img src="p2.png" style="width:600px; height:300px;">
+		</div>
+
+  
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	</div>
+</div>
+
+</body>
+</html>

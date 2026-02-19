@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Not an Insecure Admin Login</title>
+<script>
+        function checkLogin() {
+            // Get the value from the password input
+            const UserInput = document.getElementById("user").value;
+
+            // Define the correct password
+            const correctUsername = "admin123"; // Change to your desired password
+
+            // Check if the entered password matches the correct one
+            if (UserInput === correctUsername) {
+                alert("Login successful!");
+            } else {
+                alert("Incorrect username. Password is used by user: admin123");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Admin Login</h1>
+<form onsubmit="checkLogin();">
+  Username: <input type="text" name="user"><br>
+  Password: <input type="text" name="pass"><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
